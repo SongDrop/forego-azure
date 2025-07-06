@@ -186,6 +186,8 @@ server {{
         proxy_set_header Connection \$connection_upgrade;
         proxy_http_version 1.1;
     }}
+
+    client_max_body_size 1024M;
 }}
 EOF
 
